@@ -7,7 +7,7 @@ If you have played the game "Mafia", you know how troublesome the voting phase o
 
 ### Design
 ![alt](./kevin-dixon/startup/blob/main/Concept/Login_Page.png)
-!(https://github.com/kevin-dixon/startup/blob/main/Concept/Host_Page.png)
+![alt](https://github.com/kevin-dixon/startup/blob/main/Concept/Host_Page.png)
 !(https://github.com/kevin-dixon/startup/blob/main/Concept/Player_Page.png)
 
 ### Key features
