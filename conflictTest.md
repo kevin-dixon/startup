@@ -1,1 +1,1 @@
-Lorem ipsum, conflict
+Lorem ipsum, conflicting line
