@@ -23,12 +23,14 @@ If you have played the game "Mafia", you know how troublesome the voting phase o
 ### Technologies
 * HTML - Will use HTML structure for application. Multiple HTML pages; Login, Host, Player, and Results.
 * CSS - Application will format to fit web browser, phone, and other screen sizes. Will use a consistent color scheme and images.
+* JavaScript - Button interactivity, list interactions, host settings for votes, etc.
 * React - Will provide login, game session interactivity, displaying game log, and other routing and components.
-* Service - Backend to provide the following:
+* Web Service - Backend to provide the following:
     * Login
     * Game session hosting
     * Player list retreival
     * Choice submissions
     * Voter results
-* DB/Login - Stores game session IDs, player usernames, host settings, and game log events. Register and login users. Stores credentials and game IDs securely.
+* Authentication - Logs in hosts and initiates a game. Authenticates players connecting via Game ID.
+* Database - Stores game session IDs, player usernames, host settings, and game log events. Register and login users. Stores credentials and game IDs securely.
 * WebSocket - After vote tallying, results are displayed to players.
