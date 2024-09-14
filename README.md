@@ -11,12 +11,24 @@ If you have played the game "Mafia", you know how troublesome the voting phase o
 ![player_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Player_Page.png)
 
 ### Key features
-(bullet list of features)
+* Secure login over HTTPS
+* Game session hosting
+* Host can select specific vote settings
+* Host can toggle timer limits on player voting
+* Game log updates for players
+* Ability to view past voting sessions
+* Displaying all active players
+* Host can remove/add players
 
 ### Technologies
-* HTML
-* CSS
-* React
-* Service
-* DB/Login
-* WebSocket
+* HTML - Will use HTML structure for application. Multiple HTML pages; Login, Host, Player, and Results.
+* CSS - Application will format to fit web browser, phone, and other screen sizes. Will use a consistent color scheme and images.
+* React - Will provide login, game session interactivity, displaying game log, and other routing and components.
+* Service - Backend to provide the following:
+    * Login
+    * Game session hosting
+    * Player list retreival
+    * Choice submissions
+    * Voter results
+* DB/Login - Stores game session IDs, player usernames, host settings, and game log events. Register and login users. Stores credentials and game IDs securely.
+* WebSocket - After vote tallying, results are displayed to players.
