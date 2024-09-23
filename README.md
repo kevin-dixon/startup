@@ -10,6 +10,22 @@ If you have played the game "Mafia", you know how troublesome the voting phase o
 ![host_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Host_Page.png)
 ![player_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Player_Page.png)
 
+1.
+![home_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Home_Page_Concept.png)
+2.
+![create_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Create_Account_Concept.png)
+3.
+![host_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Host_Main_Page_Concept.png)
+4.
+![host vote_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Host_Vote_Page_Concept.png)
+5.
+![player_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Player_Main_Page_Concept.png)
+6.
+![event_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Event_Page_Concept.png)
+7.
+![host edit_page](https://github.com/kevin-dixon/startup/blob/main/Concept/Host_EditPlayers_Page_Concept.png)
+
+
 ### Key features
 * Secure login over HTTPS
 * Game session hosting
