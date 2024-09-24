@@ -7,10 +7,53 @@
 <body>
     <header>
         <a href="/index.html">Index Page</a>
+        <br>
+        
+        <div>
+            <h3>Host</h3>
+            <label>Game ID</label>
+            <button>####</button>
+        </div>
     </header>
-    <br>
+    <hr>
     
-    <h1>Host Main Page</h1>
+    <div>
+        <h2>Vote Settings</h2>
+
+        <label>Anonymous</label>
+        <input type="checkbox">
+        <br>
+
+        <label>Timer</label>
+        <input type="checkbox">
+        <br>
+
+        <label>Time</label>
+        <input type="number">
+        <button>-</button>
+        <button>+</button>
+        <br>
+
+        <button class="button.submit"><a href="/hostvote.html">Start New Vote</a></button>
+    </div>
+    <hr>
+
+    <div>
+        <h2><a href="editplayers.html">Remove/Add Player</a></h2>
+    </div>
+    <hr>
+
+    <div>
+        <h2>Game Event Log</h2>
+        <nav>
+            <ul>
+                <label><li>[player] was removed <button><a href="/event.html">info</a></button></li></label>
+                <label><li>[player] was removed <button><a href="/event.html">info</a></button></li></label>
+                <label><li>vote [#] ended <button><a href="/event.html">info</a></button></li></label>
+                <label><li>vote [#] ended <button><a href="/event.html">info</a></button></li></label>
+            </ul>
+        </nav>
+    </div>
 
     <footer style="position:absolute;bottom:0">
         <p>Kevin Dixon</p>
