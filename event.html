@@ -2,15 +2,54 @@
 <html>
     <head>
         <title>Mafia Event</title>
+        <style>
+            table, th, td {
+                border: 1px solid white
+            }
+            th, td {
+                background-color: powderblue;
+                padding: 5px;
+            }
+        </style>
     </head>
 
 <body>
     <header>
         <a href="/index.html">Index Page</a>
+        <br>
+        
+        <div>
+            <h3>Player</h3>
+            <label>Game ID</label>
+            <button>####</button>
+        </div>
     </header>
-    <br>
+    <hr>
     
-    <h1>Event Info Page</h1>
+    <div>
+        <h2>Event Viewer</h2>
+        <table >
+            <tr>
+                <th>Event</th>
+                <th>Message</th>
+            </tr>
+            <tr>
+                <td>[player] removed</td>
+                <td>[name] was removed by host.</td>
+            </tr>
+            <tr>
+                <td>vote [#] ended</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>etc...</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <button><a href="/player.html">Back</a></button>
+    </div>
+    <hr>
 
     <footer style="position:absolute;bottom:0">
         <p>Kevin Dixon</p>
