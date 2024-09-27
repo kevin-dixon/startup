@@ -39,7 +39,7 @@ If you have played the game "Mafia", you know how troublesome the voting phase o
 * Database - Stores game session IDs, player usernames, host settings, and game log events. Register and login users. Stores credentials and game IDs securely.
 * WebSocket - After vote tallying, results are displayed to players.
 
-##HTML deliverable
+## HTML deliverable
 For this deliverable I built out the structure of my application using HTML.
 - [x] HTML pages - Each page has HTML elements built to represent the final product or act as a placeholders for future deliverable implementation.
 - [x] Links - The index page shows links to all pages that will be included in the app. Each page contains a link directing back to the index page (this link will be removed upon full application implementation) and appropriate links to other pages.
