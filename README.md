@@ -38,3 +38,12 @@ If you have played the game "Mafia", you know how troublesome the voting phase o
 * Authentication - Logs in hosts and initiates a game. Authenticates players connecting via Game ID.
 * Database - Stores game session IDs, player usernames, host settings, and game log events. Register and login users. Stores credentials and game IDs securely.
 * WebSocket - After vote tallying, results are displayed to players.
+
+## HTML deliverable
+For this deliverable I built out the structure of my application using HTML.
+- [x] HTML pages - Each page has HTML elements built to represent the final product or act as a placeholders for future deliverable implementation.
+- [x] Links - The index page shows links to all pages that will be included in the app. Each page contains a link directing back to the index page (this link will be removed upon full application implementation) and appropriate links to other pages.
+- [x] Text - Each page contains either example text or textual titles/labels.
+- [x] Images - Each page contains a logo in the header, further images will be added as a future deliverable.
+- [x] DB/Login - A login page with an HTML form is the placeholder for the database and login implementation. Player lists and Game ID represent some of the data that will be pulled from the database.
+- [x] WebSocket - The vote timer button represents the realtime element that will be implemented.
