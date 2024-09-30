@@ -1,14 +1,9 @@
-:root {
-  --primary-color: #967A60;
-  --secondary-color: #BFA995;
-  --tertiary-color: #6B4D32;
-  --highlight-color: #EBBA90;
-  --dark-color: #33190D;
-  --element-color: #402813;
+button {
+  background-color: #402813;
 }
 
-button {
-  background-color: var(--element-color);
+header {
+  background-color: #BFA995;
 }
 
 /*# sourceMappingURL=custom.css.map */
