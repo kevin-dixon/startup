@@ -6,3 +6,9 @@
   --dark-color: #33190D;
   --element-color: #402813;
 }
+
+button {
+  background-color: var(--element-color);
+}
+
+/*# sourceMappingURL=custom.css.map */
