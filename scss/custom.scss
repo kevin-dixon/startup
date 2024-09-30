@@ -1,3 +1,10 @@
+$primary: #967A60;
+$theme-colors: (
+  primary: $primary,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 /*--------------------color pallette----------------*/
 $primary-color: #967A60;
 $secondary-color: #BFA995;
@@ -9,28 +16,27 @@ $background-color: #ffecdb;
 
 /*--------------------html elements-----------------*/
 body {
-  color: $dark-color;
   display: flex;
   flex-direction: column;
   margin: 0;
   height: 100vh;
 }
-button {
-  background: $element-color;
-  border: none;
-  border-radius: 5px;
+
+$mynewcolor:#77cccc;
+
+.btn-primary {
+    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
 }
+    
+.btn-outline-primary {
+    @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+}
+
 header {
   flex: 0 80px;
-  background-color: $primary-color;
-  color: white;
-}
-body {
-  background-color: $background-color;
 }
 footer {
   flex: 0 30px;
-  background-color: $element-color;
 }
 main {
   flex: 1;
