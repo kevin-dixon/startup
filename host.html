@@ -8,64 +8,84 @@
         <title>Mafia Host</title>
     </head>
 
-<body>
+<body class="m-2 d-flex flex-column">
     <nav>
         <a href="/index.html">Index Page</a>
     </nav>
     <br>
 
-    <header>
-        <h3>Host <button>[username]</button></h3>
-        <img src="/images/placeholder_logo.png" alt="placeholder logo" width="50px">
-        <label>Game ID</label>
-        <button>####</button>
+    <header class="container-md p-3">
+        <div class="row gx-3">
+            <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1" src="/images/placeholder_logo.png" alt="placeholder logo">
+            <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                <label>Host</label>
+                <button>[username]</button>
+            </div>
+            <div class="col-4 col-sm-4 col-md-3 offset-md-3 col-lg-2 offset-lg-6 col-xl-2 offset-xl-7 float-end">
+                <label>Game ID</label>
+                <button>####</button>
+            </div>
+        </div>
     </header>
-    <hr>
     
-    <div>
-        <h2>Vote Settings</h2>
+    <div class="card-columns flex-fill">
+        <div class="card m-2">
+            <div class="card-body">
+                <h1 class="card-title display-6 text-center text-md-start">Vote Settings</h1>
 
-        <form>
-            <label>Anonymous</label>
-            <input type="checkbox">
-            <br>
+                <form class="card-text">
+                    <label>Anonymous</label>
+                    <input type="checkbox">
+                    <br>
 
-            <label>Timer</label>
-            <input type="checkbox">
-            <br>
+                    <label>Timer</label>
+                    <input type="checkbox">
+                    <br>
 
-            <label>Time</label>
-            <input type="number">
-            <button>-</button>
-            <button>+</button>
-            <br>
+                    <label>Time</label>
+                    <input type="number">
+                    <button>-</button>
+                    <button>+</button>
+                    <br>
 
-            <button class="button.submit"><a href="/hostvote.html">Start New Vote</a></button>
-        </form>
+                    <button class="button.submit"><a href="/hostvote.html">Start New Vote</a></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card m-2">
+            <div class="card-body">
+                <h1 class="card-title display-6 text-center text-md-start">Remove/Add Player</h1>
+                <button class="card-text"><a href="editplayers.html">Edit</a></button>
+            </div>
+        </div>
+
+        <div class="card m-2">
+            <div class="card-body">
+                <h1 class="card-title display-6 text-center text-md-start">Game Event Log</h1>
+                <div class="card-text overflow-auto" style="height: 200px">
+                    <ul class="list-group vh-75">
+                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <hr>
 
-    <div>
-        <h2>Remove/Add Player</h2><button><a href="editplayers.html">Edit</a></button>
-    </div>
-    <hr>
-
-    <div>
-        <h2>Game Event Log</h2>
-        <nav>
-            <ul>
-                <label><li>[player] was removed <button><a href="/event.html">info</a></button></li></label>
-                <label><li>[player] was removed <button><a href="/event.html">info</a></button></li></label>
-                <label><li>vote [#] ended <button><a href="/event.html">info</a></button></li></label>
-                <label><li>vote [#] ended <button><a href="/event.html">info</a></button></li></label>
-            </ul>
-        </nav>
-    </div>
-    <hr>
-
-    <footer>
-        <p>Kevin Dixon</p>
-        <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
+    <footer class="row">
+        <div class="col-3">
+            <p>Kevin Dixon</p>
+        </div>
+        <div class="col float-end">
+            <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
+        </div>
     </footer>
 
     <script

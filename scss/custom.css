@@ -11187,5 +11187,8 @@ textarea.form-control-lg {
   }
 }
 /*--------------------color pallette----------------*/
+header {
+  height: auto;
+}
 
 /*# sourceMappingURL=custom.css.map */
