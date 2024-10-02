@@ -1,6 +1,21 @@
 $primary: #967A60;
+$secondary: #EBBA90;
+$success: green;
+$info: blue;
+$warning: red;
+$danger: yellow;
+$light: #ffecdb;
+$dark: #33190D;
+
 $theme-colors: (
-  primary: $primary,
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
