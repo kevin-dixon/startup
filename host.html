@@ -8,7 +8,7 @@
         <title>Mafia Host</title>
     </head>
 
-<body class="m-2 d-flex flex-column">
+<body class="m-2">
     <nav>
         <a href="/index.html">Index Page</a>
     </nav>
@@ -19,61 +19,82 @@
             <img class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1" src="/images/placeholder_logo.png" alt="placeholder logo">
             <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2">
                 <label>Host</label>
-                <button>[username]</button>
+                <div class="d-inline p-2 bg-primary text-white">[username]</div>
             </div>
             <div class="col-4 col-sm-4 col-md-3 offset-md-3 col-lg-2 offset-lg-6 col-xl-2 offset-xl-7 float-end">
                 <label>Game ID</label>
-                <button>####</button>
+                <div class="d-inline p-2 bg-primary text-white">[####]</div>
             </div>
         </div>
     </header>
     
-    <div class="card-columns flex-fill">
-        <div class="card m-2">
-            <div class="card-body">
-                <h1 class="card-title display-6 text-center text-md-start">Vote Settings</h1>
+    <div class="card-group row">
+        <div class="col-10 col-sm-7 m-2">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title display-6 text-center text-md-start">Vote Settings</h1>
 
-                <form class="card-text">
-                    <label>Anonymous</label>
-                    <input type="checkbox">
-                    <br>
+                    <form class="card-text">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Anonymous</label>
+                        </div>
 
-                    <label>Timer</label>
-                    <input type="checkbox">
-                    <br>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Timer</label>
+                        </div>
 
-                    <label>Time</label>
-                    <input type="number">
-                    <button>-</button>
-                    <button>+</button>
-                    <br>
-
-                    <button class="button.submit"><a href="/hostvote.html">Start New Vote</a></button>
-                </form>
+                        <label>Time (seconds)</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="15-seconds">
+                                <label class="form-check-label" for="inlineRadio1">15</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="30-seconds">
+                                <label class="form-check-label" for="inlineRadio2">30</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="45-seconds">
+                                <label class="form-check-label" for="inlineRadio3">45</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="60-seconds" checked>
+                                <label class="form-check-label" for="inlineRadio4">60</label>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="hostvote.html" class="btn btn-primary m-3 active text-white" role="button" aria-pressed="true">Start New Vote</a>
+                </div>
             </div>
         </div>
 
-        <div class="card m-2">
-            <div class="card-body">
-                <h1 class="card-title display-6 text-center text-md-start">Remove/Add Player</h1>
-                <button class="card-text"><a href="editplayers.html">Edit</a></button>
+        <div class="col-10 col-sm-4 m-2">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h1 class="card-title display-6 text-center text-md-start">Remove/Add Player</h1>
+                    <a href="editplayers.html" class="btn btn-primary active text-white" role="button" aria-pressed="true">Player List</a>
+                </div>
             </div>
         </div>
 
-        <div class="card m-2">
-            <div class="card-body">
-                <h1 class="card-title display-6 text-center text-md-start">Game Event Log</h1>
-                <div class="card-text overflow-auto" style="height: 200px">
-                    <ul class="list-group vh-75">
-                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
-                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
-                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
-                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
-                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
-                        <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
-                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
-                        <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
-                    </ul>
+        <div class="col m-2">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title display-6 text-center text-md-start">Game Event Log</h1>
+                    <div class="card-text overflow-auto" style="height: 200px">
+                        <ul class="list-group vh-75">
+                            <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                            <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                            <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                            <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                            <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                            <button href="/event.html" class="list-group-item list-group-item-action">[player] was removed</button>
+                            <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                            <button href="/event.html" class="list-group-item list-group-item-action">vote [#] ended</button>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
