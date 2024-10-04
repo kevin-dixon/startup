@@ -10,11 +10,6 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/index.html">Index Page</a>
-    </nav>
-    <br>
-
     <header class="row m-2">
         <div class="navbar navbar-light bg-light rounded p-2">
             <img class="img-fluid" src="/images/placeholder_logo.png" alt="placeholder logo">
@@ -30,35 +25,45 @@
     </header>
 
     <div>
-        <h2>Event Viewer</h2>
-        <table>
-            <tr>
-                <th>Event</th>
-                <th>Message</th>
-            </tr>
-            <tr>
-                <td>[player] removed</td>
-                <td>[name] was removed by host.</td>
-            </tr>
-            <tr>
-                <td>vote [#] ended</td>
-                <td>[player] was voted by [player], [player]</td>
-            </tr>
-            <tr>
-                <td>etc...</td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title display-6 text-center">Game Event Log</h1>
+                <div class="card-text overflow-auto" style="height: 200px">
+                    <ul class="list-group vh-75">
+                        <p class="list-group-item list-group-item-action">[player] was
+                            removed</p>
+                        <p class="list-group-item list-group-item-action">[player] was
+                            removed</p>
+                        <p class="list-group-item list-group-item-action">vote [#]
+                            ended</p>
+                        <p class="list-group-item list-group-item-action">vote [#]
+                            ended</p>
+                        <p class="list-group-item list-group-item-action">[player] was
+                            removed</p>
+                        <p class="list-group-item list-group-item-action">[player] was
+                            removed</p>
+                        <p class="list-group-item list-group-item-action">vote [#]
+                            ended</p>
+                        <p class="list-group-item list-group-item-action">vote [#]
+                            ended</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-        <button><a href="/player.html">Back</a></button>
+        <a class="btn btn-primary btn-lg btn-outline m-3 text-white" href="/player.html">Back</a>
     </div>
 
     <!-- Sticky Footer -->
     <footer class="bg-body-tertiary text-center fixed-bottom">
-        <div class="container p-3">
-            <label>Kevin Dixon</label>
-            <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
-        </div>
+        <!-- Pages & GitHub Link -->
+        <div class="row p-2">
+            <a class="col-6" href="/index.html">Index Page</a>
+            <div class="col-6">
+                <label>Kevin Dixon</label>
+                <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
+            </div>
+        </div>        
 
         <!-- Trademark -->
         <div class="text-center p-2 bg-body-tertiary">

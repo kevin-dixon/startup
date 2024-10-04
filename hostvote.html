@@ -10,11 +10,6 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/index.html">Index Page</a>
-    </nav>
-    <br>
-
     <header class="row m-2">
         <div class="navbar navbar-light bg-light rounded p-2">
             <img class="img-fluid" src="/images/placeholder_logo.png" alt="placeholder logo">
@@ -29,36 +24,41 @@
         </div>
     </header>
 
-    <div>
-        <h2>Ongoing Vote</h2>
-        <h5>Waiting For:</h5>
-        <nav>
-            <ul>
-                <label>
-                    <li>[player]</button></li>
-                </label>
-                <label>
-                    <li>[player]</button></li>
-                </label>
-                <label>
-                    <li>[player]</button></li>
-                </label>
-                <label>
-                    <li>[player]</button></li>
-                </label>
-            </ul>
-        </nav>
-        <label>Timer<button>(min.)</button></label>
-        <button><a href="/host.html">End Vote</a></button>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title display-6 text-center text-md-start">Ongoing Vote</h1>
+            <p>Waiting For:</p>
+            <div class="card-text overflow-auto" style="height: 200px">
+                <ul class="list-group vh-75">
+                    <p class="list-group-item list-group-item-action">[player]</p>
+                    <p class="list-group-item list-group-item-action">[player]</p>
+                    <p class="list-group-item list-group-item-action">[player]</p>
+                    <p class="list-group-item list-group-item-action">[player]</p>
+                    <p class="list-group-item list-group-item-action">[player]</p>
+                    <p class="list-group-item list-group-item-action">[player]</p>
+                </ul>
+            </div>
+            <div class="navbar p-3">
+                <div class="nav-item">
+                    <label>Timer</label>
+                    <div class="d-inline p-2 bg-primary text-white rounded">[time remaining]</div>
+                </div>
+                <a class="d-inline nav-item btn btn-warning text-white">End Vote</a>
+            </div>
+        </div>
     </div>
-    <hr>
+
 
     <!-- Sticky Footer -->
     <footer class="bg-body-tertiary text-center fixed-bottom">
-        <div class="container p-3">
-            <label>Kevin Dixon</label>
-            <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
-        </div>
+        <!-- Pages & GitHub Link -->
+        <div class="row p-2">
+            <a class="col-6" href="/index.html">Index Page</a>
+            <div class="col-6">
+                <label>Kevin Dixon</label>
+                <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
+            </div>
+        </div>        
 
         <!-- Trademark -->
         <div class="text-center p-2 bg-body-tertiary">
