@@ -22,18 +22,20 @@
         </nav>
     </header>
 
-    <form>
-        <h1 class="display-6">Join Game</h1>
+    <div class="container d-flex justify-content-center text-center w-75">
+    <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal">Join Game</h1>
         <div class="form-group">
-            <label for="inputGameID">Game ID</label>
-            <input type="text" class="form-control" id="inputGameID" placeholder="Enter ID">
+            <label class="visually-hidden" for="inputGameID">Game ID</label>
+            <input type="text" class="form-control" style="max-width: 500px;" id="inputGameID" placeholder="Enter Game ID" required autofocus>
         </div>
         <div class="form-group">
-            <label for="inputDisplayName">Display Name</label>
-            <input type="text" class="form-control" id="inputDisplayName" placeholder="Enter Name">
+            <label class="visually-hidden" for="inputDisplayName">Display Name</label>
+            <input type="text" class="form-control" style="max-width: 400px;" id="inputDisplayName" placeholder="Enter Name" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+</div>
 
 
     <form>
