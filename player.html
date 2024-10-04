@@ -10,11 +10,6 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/index.html">Index Page</a>
-    </nav>
-    <br>
-
     <header class="row m-2">
         <div class="navbar navbar-light bg-light rounded p-2">
             <img class="img-fluid" src="/images/placeholder_logo.png" alt="placeholder logo">
@@ -29,48 +24,68 @@
         </div>
     </header>
 
-    <div>
-        <h2>Active Players</h2>
-        <label>Vote Timer: <button>00:00</button></label>
-        <br>
-        <div>
-            <ul>
-                <li>[player]</li><button>select</button>
-                <li>[player]</li><button>select</button>
-                <li>[player]</li><button>select</button>
-                <li>[player]</li><button>select</button>
-            </ul>
-            <button>Selected: </button><input type="text" value="[player]">
-            <br>
-            <button>VOTE</button>
+    <div class="card-group row m-2">
+        <div class="card m-2">
+            <div class="card-body">
+                <div class="row">
+                    <h1 class="card-title display-6 text-start col-6">Players</h1>
+                    <div class="text-end col-6 text-center align-middle p-3">
+                        <label>Vote Time: </label>
+                        <div class="d-inline p-2 bg-secondary text-white rounded">00:00</div>
+                    </div>
+                </div>
+                <div class="card-text overflow-auto" style="height: 300px">
+                    <ul class="list-group vh-75">
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                        <a class="list-group-item list-group-item-action">[player]<div
+                                class="btn btn-primary float-end text-white">select</div></a>
+                    </ul>
+                </div>
+                <br>
+                <div class="navbar p-3">
+                    <div class="nav-item">
+                        <label>Selected: </label>
+                        <div class="d-inline p-2 bg-primary text-white rounded">[player]</div>
+                    </div>
+                    <a class="d-inline nav-item btn btn-danger text-white">Vote</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event Log Link -->
+        <div class="card m-2">
+            <div class="card-body text-center">
+                <div class="row">
+                    <h1 class="card-title display-6 text-center">Game Log</h1>
+                    <a href="event.html" class="btn btn-primary active text-white m-2" role="button"
+                        aria-pressed="true">Event Log</a>
+                </div>
+            </div>
         </div>
     </div>
-    <hr>
-
-    <div>
-        <h2>Game Event Log</h2>
-        <ul>
-            <label>
-                <li>[player] was removed <button><a href="/event.html">info</a></button></li>
-            </label>
-            <label>
-                <li>[player] was removed <button><a href="/event.html">info</a></button></li>
-            </label>
-            <label>
-                <li>vote [#] ended <button><a href="/event.html">info</a></button></li>
-            </label>
-            <label>
-                <li>vote [#] ended <button><a href="/event.html">info</a></button></li>
-            </label>
-        </ul>
-    </div>
-    <hr>
 
     <!-- Sticky Footer -->
-    <footer class="bg-body-tertiary text-center  fixed-bottom">
-        <div class="container p-3">
-            <label>Kevin Dixon</label>
-            <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
+    <footer class="bg-body-tertiary text-center fixed-bottom">
+        <!-- Pages & GitHub Link -->
+        <div class="row p-2">
+            <a class="col-6" href="/index.html">Index Page</a>
+            <div class="col-6">
+                <label>Kevin Dixon</label>
+                <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
+            </div>
         </div>
 
         <!-- Trademark -->
