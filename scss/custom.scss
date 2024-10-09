@@ -10,15 +10,16 @@ $dark: #33190D;
 */
 
 /*-------------Ministry Color Sceme-----------------*/
-$primary: #848D73;
-$secondary: #BD4533;
-$tertiary: #2F474D;
-$success: #545C48;
-$info: #679F91;
-$warning: #EF7C2A;
-$danger: red;
-$light: #EEF1DA;
-$dark: #3F2D2E;
+$primary: #2F474D;      /*broadcast blue*/
+$secondary: #BD4533;    /*watchful red*/
+$tertiary: #848D73;     /*militant green*/
+$success: #545C48;      /*tank shell*/
+$info: #679F91;         /*vote blue*/
+$warning: #EF7C2A;      /*deviant orange*/
+$danger: red;           /*red*/
+$light: #EEF1DA;        /*quiet snow*/
+$dark: #3F2D2E;         /*reddish mud*/
+$background: #dddab3;   /*muted beige*/
 
 /*------------------color mapping-------------------*/
 $theme-colors: (
@@ -30,28 +31,17 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "background": $background
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-/*--------------------color pallette----------------*/
-$primary-color: #967A60;
-$secondary-color: #BFA995;
-$tertiary-color: #6B4D32;
-$highlight-color: #EBBA90;
-$dark-color: #33190D;
-$element-color: #402813;
-$background-color: #ffecdb;
 
 header {
   height: auto;
 }
 body {
   padding-bottom: 200px;
-  background-image: url("/images/glass_faded.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 .header-image {
   max-width: 100px;
