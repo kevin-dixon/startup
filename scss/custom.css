@@ -11853,4 +11853,16 @@ body {
   padding-bottom: 200px;
 }
 
+.header-image {
+  max-width: 100px;
+}
+
+.secondary-text {
+  color: #EBBA90;
+}
+
+.primary-text {
+  color: #967A60;
+}
+
 /*# sourceMappingURL=custom.css.map */
