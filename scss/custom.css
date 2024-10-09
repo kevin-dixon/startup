@@ -11851,6 +11851,9 @@ header {
 
 body {
   padding-bottom: 200px;
+  background-image: url("/images/glass_faded.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .header-image {
