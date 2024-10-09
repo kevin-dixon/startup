@@ -1,3 +1,4 @@
+/* Brown Color Scheme
 $primary: #967A60;
 $secondary: #EBBA90;
 $success: green;
@@ -6,10 +7,24 @@ $warning: red;
 $danger: #e66515;
 $light: #ffecdb;
 $dark: #33190D;
+*/
 
+/*-------------Ministry Color Sceme-----------------*/
+$primary: #848D73;
+$secondary: #BD4533;
+$tertiary: #2F474D;
+$success: #545C48;
+$info: #679F91;
+$warning: #EF7C2A;
+$danger: red;
+$light: #EEF1DA;
+$dark: #3F2D2E;
+
+/*------------------color mapping-------------------*/
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "tertiary":   $tertiary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
