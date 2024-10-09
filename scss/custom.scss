@@ -1,54 +1,101 @@
-/* Brown Color Scheme
-$primary: #967A60;
-$secondary: #EBBA90;
-$success: green;
-$info: blue;
-$warning: red;
-$danger: #e66515;
-$light: #ffecdb;
-$dark: #33190D;
-*/
-
 /*-------------Ministry Color Sceme-----------------*/
-$primary: #2F474D;      /*broadcast blue*/
-$secondary: #BD4533;    /*watchful red*/
-$tertiary: #848D73;     /*militant green*/
-$success: #545C48;      /*tank shell*/
-$info: #679F91;         /*vote blue*/
-$warning: #EF7C2A;      /*deviant orange*/
-$danger: red;           /*red*/
-$light: #EEF1DA;        /*quiet snow*/
-$dark: #3F2D2E;         /*reddish mud*/
-$background: #dddab3;   /*muted beige*/
+$primary: #2F474D;
+/*broadcast blue*/
+$secondary: #BD4533;
+/*watchful red*/
+$tertiary: #848D73;
+/*militant green*/
+$success: #545C48;
+/*tank shell*/
+$info: #679F91;
+/*vote blue*/
+$warning: #EF7C2A;
+/*deviant orange*/
+$danger: red;
+/*red*/
+$light: #f5f7e9;
+/*quiet snow*/
+$dark: #3F2D2E;
+/*reddish mud*/
+$background: #dddab3;
+/*muted beige*/
 
 /*------------------color mapping-------------------*/
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "tertiary":   $tertiary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark,
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
   "background": $background
 );
 
+/*-------------------font family--------------------*/
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-header {
-  height: auto;
+/*-------------------custom css---------------------*/
+html, body {
+  overflow-x: hidden;
 }
+
+header {
+  /*height: 10rem;*/
+}
+
 body {
   padding-bottom: 200px;
 }
+
 .header-image {
-  max-width: 100px;
+  /*max-width: 200px;*/
+  /*height: 10rem;*/
 }
+
 .secondary-text {
   color: $secondary;
 }
+
 .primary-text {
   color: $primary;
+}
+
+.secondary-text {
+  color: $secondary;
+}
+
+.basic-background {
+  background-color: $background;
+}
+
+.background-tertiary {
+  background-color: $tertiary;
+}
+
+/*form element colors*/
+.form-switch .form-check-input:focus {
+  border-color: $secondary;
+}
+
+.form-switch .form-check-input:checked {
+  background-color: $secondary;
+  border: none;
+}
+
+.form-check-inline .form-check-input:focus {
+  border-color: $secondary;
+}
+
+.form-check-inline .form-check-input:checked {
+  background-color: $secondary;
+  border: none;
 }

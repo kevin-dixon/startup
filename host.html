@@ -9,20 +9,42 @@
     <title>Mafia Host</title>
 </head>
 
-<body class="m-2">
-    <header class="row m-2">
-        <div class="navbar navbar-light bg-light rounded p-2">
-            <img class="img-fluid" src="/images/placeholder_logo.png" alt="placeholder logo">
-            <div class="nav-item">
+<body>
+
+    <header class="navbar navbar-expand-lg basic-background">
+        <a class="navbar-brand p-2" href="#">
+            <img class="d-inline-block align-top" width="100" height="100" src="/images/shaded_profile_colorful.png">
+        </a>
+        <div class="d-flex flex-column align-self-center">
+            <div class="p-2">
                 <label>Host</label>
                 <div class="d-inline p-2 bg-primary text-white rounded">[username]</div>
             </div>
-            <div class="nav-item">
+            <div class="p-2">
                 <label>Game ID</label>
                 <div class="d-inline p-2 bg-primary text-white rounded">[####]</div>
             </div>
         </div>
     </header>
+
+    <!-- Header -->
+    <!--
+    <header class="row">
+        <div class="d-flex flex-row justify-content-between basic-background p-2">
+            <img class="img-fluid header-image p-2" src="/images/shaded_profile_colorful.png" alt="logo">
+            <div class="d-flex flex-column align-self-center p-3">
+                <div class="p-2">
+                    <label>Host</label>
+                    <div class="d-inline p-2 bg-primary text-white rounded">[username]</div>
+                </div>
+                <div class="p-2">
+                    <label>Game ID</label>
+                    <div class="d-inline p-2 bg-primary text-white rounded">[####]</div>
+                </div>
+            </div>
+        </div>
+    </header>
+-->
 
     <div class="card-group row">
         <div class="col-10 col-sm-7 m-2">
@@ -73,13 +95,13 @@
             </div>
         </div>
 
-        <div class="col-10 col-sm-4 m-2">
+        <div class="col-10 col-sm-4 m-2 mt-0">
             <div class="card">
                 <div class="card-body text-center">
                     <h1 class="card-title display-6 text-center text-md-start">Players and Log</h1>
                     <a href="editplayers.html" class="btn btn-primary active text-white m-2" role="button"
                         aria-pressed="true">Player List</a>
-                        <a href="event.html" class="btn btn-primary active text-white m-2" role="button"
+                    <a href="event.html" class="btn btn-primary active text-white m-2" role="button"
                         aria-pressed="true">Event Log</a>
                 </div>
             </div>
@@ -87,20 +109,20 @@
     </div>
 
     <!-- Sticky Footer -->
-    <footer class="bg-body-tertiary text-center fixed-bottom">
+    <footer class="background-tertiary text-center fixed-bottom opacity-75 text-white">
         <!-- Pages & GitHub Link -->
-        <div class="row p-2">
-            <a class="col-6" href="/index.html">Index Page</a>
-            <div class="col-6">
+        <div class="d-flex flex-row justify-content-between p-3">
+            <a class="link-secondary" href="/index.html">Index Page</a>
+            <div class="">
                 <label>Kevin Dixon</label>
-                <a href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
+                <a class="link-secondary" href="https://github.com/kevin-dixon/startup">GitHub Repo</a>
             </div>
-        </div>        
+        </div>
 
         <!-- Trademark -->
-        <div class="text-center p-2 bg-body-tertiary">
+        <div class="text-center pb-2">
             <label>&#8482 2024 Trademark:</label>
-            <a class="text-body" href="https://mafiamystery.click/">MafiaMystery.click</a>
+            <a class="link-secondary" href="https://mafiamystery.click/">MafiaMystery.click</a>
         </div>
     </footer>
 
