@@ -12171,17 +12171,8 @@ html, body {
   overflow-x: hidden;
 }
 
-header {
-  /*height: 10rem;*/
-}
-
 body {
   padding-bottom: 200px;
-}
-
-.header-image {
-  /*max-width: 200px;*/
-  /*height: 10rem;*/
 }
 
 .secondary-text {
