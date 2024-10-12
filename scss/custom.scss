@@ -21,6 +21,8 @@ $background: #dddab3;
 /*muted beige*/
 $light-secondary: #fea197;
 /*light version secondary*/
+$dark-secondary: #7b3021;
+/*dark version secondary*/
 
 /*------------------color mapping-------------------*/
 $theme-colors: (
@@ -30,7 +32,7 @@ $theme-colors: (
   "success": $success,
   "info": $info,
   "warning": $warning,
-  "danger": $danger,
+  "danger": $dark-secondary,
   "light": $light,
   "dark": $dark,
   "background": $background
@@ -76,6 +78,11 @@ body {
 
 .background-tertiary {
   background-color: $tertiary;
+}
+
+.list-group-item {
+  /* change sizing? */
+  border: none;
 }
 
 /*form element colors*/
