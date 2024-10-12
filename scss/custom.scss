@@ -19,6 +19,8 @@ $dark: #3F2D2E;
 /*reddish mud*/
 $background: #dddab3;
 /*muted beige*/
+$light-secondary: #fea197;
+/*light version secondary*/
 
 /*------------------color mapping-------------------*/
 $theme-colors: (
@@ -46,6 +48,10 @@ $font-family-base: $font-family-sans-serif !default;
 /*-------------------custom css---------------------*/
 html, body {
   overflow-x: hidden;
+}
+
+.light-link {
+  color: $light-secondary;
 }
 
 body {

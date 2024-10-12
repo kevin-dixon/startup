@@ -10,6 +10,7 @@
 /*quiet snow*/
 /*reddish mud*/
 /*muted beige*/
+/*light version secondary*/
 /*------------------color mapping-------------------*/
 /*-------------------font family--------------------*/
 /*!
@@ -7352,6 +7353,14 @@ textarea.form-control-lg {
   opacity: 0.75 !important;
 }
 
+.opacity-85 {
+  opacity: 0.85 !important;
+}
+
+.opacity-90 {
+  opacity: 0.9 !important;
+}
+
 .opacity-100 {
   opacity: 1 !important;
 }
@@ -12169,6 +12178,10 @@ textarea.form-control-lg {
 /*-------------------custom css---------------------*/
 html, body {
   overflow-x: hidden;
+}
+
+.light-link {
+  color: #fea197;
 }
 
 body {
