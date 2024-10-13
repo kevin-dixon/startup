@@ -47,3 +47,12 @@ For this deliverable I built out the structure of my application using HTML.
 - [x] Images - Each page contains a logo in the header, further images will be added as a future deliverable.
 - [x] DB/Login - A login page with an HTML form is the placeholder for the database and login implementation. Player lists and Game ID represent some of the data that will be pulled from the database.
 - [x] WebSocket - The vote timer button represents the realtime element that will be implemented.
+
+## CSS deliverable
+For this delivarable I added styling to my application using CSS, Bootstrap, and Sass.
+- [x] Header, footer, and main content body - each page has a header, footer, and content marked with the main tag
+- [x] Navigation elements - each page with navigation elements has them marked with the nav tag, links are colored and underlined
+- [x] Responsive to window resizing - the application pages are styled to responsively size to match visuals on all common window sizes
+- [x] Application elements - color scheme and spacing creates visually appealing elements
+- [x] Application text content - example content is listed and placeholders marked with brackets, consistent font and heading typography for all pages
+- [x] Application images - custom icons for the header, browser head, and footer are added with proper sizing
