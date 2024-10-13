@@ -29,70 +29,73 @@
         </div>
     </header>
 
-    <!-- Cards -->
-    <div class="card-group row">
-        <!-- Vote Card -->
-        <div class="col-10 col-sm-7 m-2">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title display-6 text-center text-md-start">Vote Settings</h1>
+    <!-- Main -->
+    <main>
+        <!-- Cards -->
+        <div class="card-group row">
+            <!-- Vote Card -->
+            <div class="col-10 col-sm-7 m-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title display-6 text-center text-md-start">Vote Settings</h1>
 
-                    <form class="card-text">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                checked>
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Anonymous</label>
-                        </div>
+                        <form class="card-text">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Anonymous</label>
+                            </div>
 
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                checked>
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Timer</label>
-                        </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Timer</label>
+                            </div>
 
-                        <label>Time (seconds)</label>
-                        <div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="15-seconds">
-                                <label class="form-check-label" for="inlineRadio1">15</label>
+                            <label>Time (seconds)</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="15-seconds">
+                                    <label class="form-check-label" for="inlineRadio1">15</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="30-seconds">
+                                    <label class="form-check-label" for="inlineRadio2">30</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="45-seconds">
+                                    <label class="form-check-label" for="inlineRadio3">45</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="60-seconds" checked>
+                                    <label class="form-check-label" for="inlineRadio4">60</label>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="30-seconds">
-                                <label class="form-check-label" for="inlineRadio2">30</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                    value="45-seconds">
-                                <label class="form-check-label" for="inlineRadio3">45</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
-                                    value="60-seconds" checked>
-                                <label class="form-check-label" for="inlineRadio4">60</label>
-                            </div>
-                        </div>
-                    </form>
-                    <a href="hostvote.html" class="btn btn-primary m-3 active text-white" role="button"
-                        aria-pressed="true">Start New Vote</a>
+                        </form>
+                        <a href="hostvote.html" class="btn btn-primary m-3 active text-white" role="button"
+                            aria-pressed="true">Start New Vote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links Card -->
+            <div class="col-10 col-sm-4 m-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1 class="card-title display-6 text-center text-md-start">Players and Log</h1>
+                        <a href="editplayers.html" class="btn btn-primary active text-white m-2" role="button"
+                            aria-pressed="true">Player List</a>
+                        <a href="event.html" class="btn btn-primary active text-white m-2" role="button"
+                            aria-pressed="true">Event Log</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Links Card -->
-        <div class="col-10 col-sm-4 m-2">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h1 class="card-title display-6 text-center text-md-start">Players and Log</h1>
-                    <a href="editplayers.html" class="btn btn-primary active text-white m-2" role="button"
-                        aria-pressed="true">Player List</a>
-                    <a href="event.html" class="btn btn-primary active text-white m-2" role="button"
-                        aria-pressed="true">Event Log</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <!-- Sticky Footer -->
     <footer class="background-tertiary text-center fixed-bottom opacity-85 text-white">
