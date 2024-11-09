@@ -27,7 +27,6 @@ function Pagelist() {
                     <li><NavLink to='events'>Events Viewer</NavLink></li>
                 </ul>
             </nav>
-
             <Routes>
                 <Route path='/' element={<Login />} exact />
                 <Route path='/createacct' element={<CreateAcct />} />
