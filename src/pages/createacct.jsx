@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
+import { Outlet } from 'react-router-dom';
+import Header from "../components/Header";
 
 export function CreateAcct() {
     return (
-        <main>
+        <div>
+            <Header />
             <div class="container d-flex justify-content-center text-center">
                 <form class="form-signin">
                     <h1 class="display-6 m-3">New Account</h1>
@@ -27,6 +30,7 @@ export function CreateAcct() {
                         Account</button>
                 </form>
             </div>
-        </main>
+            <Outlet />
+        </div>
     );
 }

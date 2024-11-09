@@ -2,10 +2,13 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
 import { Outlet } from "react-router-dom";
+import UserHeader from '../components/UserHeader';
+
 
 export function Player() {
     return (
-        <main>
+        <div>
+            <UserHeader />
             <div class="card-group row m-2">
                 <div class="col-12 col-md-8">
                     <div class="card">
@@ -63,6 +66,6 @@ export function Player() {
                 </div>
             </div>
             <Outlet />
-        </main>
+        </div>
     );
 }

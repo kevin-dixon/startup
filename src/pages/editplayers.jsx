@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
+import { Outlet } from 'react-router-dom';
+import UserHeader from '../components/UserHeader';
 
 export function EditPlayers() {
     return (
-        <main>
+        <div>
+            <UserHeader />
             <div class="card m-2">
                 <div class="card-body">
                     <h1 class="card-title display-6 text-center text-md-start">Edit Players</h1>
@@ -34,7 +37,7 @@ export function EditPlayers() {
             <div>
                 <p>[Back Button]</p>
             </div>
-
-        </main>
+            <Outlet />
+        </div>
     );
 }

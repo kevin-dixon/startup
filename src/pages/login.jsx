@@ -1,11 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
-import { Outlet } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Link,
+    Route,
+    Routes,
+    Outlet
+} from "react-router-dom";
+import Header from "../components/Header";
 
 export function Login() {
     return (
-        <main>
+        <div>
+            <Header />
             <div className="container d-flex justify-content-center text-center">
                 <form className="form-signin">
                     <h1 className="display-6 m-3">Join</h1>
@@ -41,11 +49,14 @@ export function Login() {
                 <small id="createAccountPrompt" className="form-text text-muted m-2">Hosting your first game? Make a new
                     account!</small>
             </div>
-            <div className="d-flex justify-content-center">
-                [create account button]
-            </div>
+
+            <nav class="d-flex justify-content-center">
+                <a type="submit" class="btn btn-sm btn-secondary m-2 text-white">
+                    <Link class="text-white" to="/createacct">Create Account</Link>
+                </a>
+            </nav>
 
             <Outlet />
-        </main>
+        </div>
     );
 }

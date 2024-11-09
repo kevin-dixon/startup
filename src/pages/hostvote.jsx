@@ -1,10 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
+import UserHeader from '../components/UserHeader';
 
 export function HostVote() {
     return (
-        <main>
+        <div>
+            <UserHeader />
             <div class="card m-2">
                 <div class="card-body">
                     <h1 class="card-title display-6 text-center text-md-start">Ongoing Vote</h1>
@@ -27,6 +29,6 @@ export function HostVote() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     );
 }

@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
         </nav>
         <div class="text-center p-2 pt-0">
-            <label>&#8482 2024 Trademark:</label>
+            <label>&trade; 2024 Trademark:</label>
             <a class="light-link" href="https://mafiamystery.click/">MafiaMystery.click</a>
         </div>
     </footer>
