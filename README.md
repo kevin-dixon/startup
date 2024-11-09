@@ -1,5 +1,9 @@
 # Startup Project
 
+## Site
+- Startup deploy available at startup.mafiamystery.click
+- Simon deploy available at simon.mafiamystery.click
+
 ## Mafia Game Companion
 
 ### Elevator Pitch
