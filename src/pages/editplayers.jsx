@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import UserHeader from '../components/UserHeader';
 
 export function EditPlayers() {
@@ -34,9 +34,12 @@ export function EditPlayers() {
                 </div>
             </div>
 
-            <div>
-                <p>[Back Button]</p>
-            </div>
+            <nav>
+                <a class="btn btn-primary btn-lg btn-outline m-3 mt-1 text-white">
+                    <Link class="text-white" to="/hostmain">Back</Link>
+                </a>
+            </nav>
+
             <Outlet />
         </div>
     );

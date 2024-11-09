@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import UserHeader from '../components/UserHeader';
 
 export function HostMain() {
@@ -51,8 +51,8 @@ export function HostMain() {
                                     </div>
                                 </div>
                             </form>
-                            <a href="hostvote.html" class="btn btn-primary m-3 active text-white" role="button"
-                                aria-pressed="true">Start New Vote</a>
+                            <a class="btn btn-primary m-3 active text-white" role="button"
+                                aria-pressed="true"><Link class="text-white" to="/hostvote">Start New Vote</Link></a>
                         </div>
                     </div>
                 </div>
@@ -62,10 +62,10 @@ export function HostMain() {
                         <div class="card-body text-center">
                             <h1 class="card-title display-6 text-center text-md-start">Players and Log</h1>
                             <nav>
-                                <a href="editplayers.html" class="btn btn-primary active text-white m-2" role="button"
-                                    aria-pressed="true">Player List</a>
-                                <a href="event.html" class="btn btn-primary active text-white m-2" role="button"
-                                    aria-pressed="true">Event Log</a>
+                                <a class="btn btn-primary active text-white m-2" role="button"
+                                    aria-pressed="true"><Link class="text-white" to="/editplayers">Player List</Link></a>
+                                <a class="btn btn-primary active text-white m-2" role="button"
+                                    aria-pressed="true"><Link class="text-white" to="/events">Event Log</Link></a>
                             </nav>
                         </div>
                     </div>

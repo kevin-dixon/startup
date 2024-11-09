@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import UserHeader from '../components/UserHeader';
 
 
@@ -58,8 +58,9 @@ export function Player() {
                             <div class="row">
                                 <h1 class="card-title display-6 text-center">View Game Events</h1>
                                 <nav>
-                                    [event log button]
-                                </nav>
+                                <a class="btn btn-primary active text-white m-2" role="button"
+                                    aria-pressed="true"><Link class="text-white" to="/events">Event Log</Link></a>
+                            </nav>
                             </div>
                         </div>
                     </div>
