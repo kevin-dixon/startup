@@ -1,12 +1,16 @@
 import React from 'react';
-import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../scss/custom.css';
+import './app.css';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+//import { Login } from './pages/login';
+import Pagelist from './components/Pagelist';
 
 function App() {
     return (
-            <div>
-                <p>app</p>
-                <div><Header /></div>
-            </div>
+        <BrowserRouter>
+            <Pagelist />
+        </BrowserRouter>
     );
 }
 
