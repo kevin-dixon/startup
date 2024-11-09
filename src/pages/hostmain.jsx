@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
+import { Outlet } from "react-router-dom";
+import UserHeader from '../components/UserHeader';
 
 export function HostMain() {
     return (
-        <main>
+        <div>
+            <UserHeader />
             <div class="card-group row">
                 <div class="col-10 col-sm-7 m-2">
                     <div class="card">
@@ -68,6 +71,8 @@ export function HostMain() {
                     </div>
                 </div>
             </div>
-        </main>
+
+            <Outlet />
+        </div>
     );
 }

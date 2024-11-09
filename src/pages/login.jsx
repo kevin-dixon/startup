@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
+import { Outlet } from "react-router-dom";
 
 export function Login() {
     return (
@@ -43,6 +44,8 @@ export function Login() {
             <div className="d-flex justify-content-center">
                 [create account button]
             </div>
+
+            <Outlet />
         </main>
     );
 }

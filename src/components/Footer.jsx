@@ -1,10 +1,17 @@
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Link,
+    Route,
+    Routes,
+    Outlet
+} from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer class="background-tertiary text-center fixed-bottom opacity-85 text-white">
         <nav class="row p-2 pb-0">
-            <a class="col-5 light-link" href="index.html">Index Page</a>
+            <Link class="col-5 light-link"to="/">Layout Page</Link>
             <div class="col-2">
                 <img class="d-inline-block align-top" width="50" height="50" src="../images/hat_logo.png"></img>
             </div>

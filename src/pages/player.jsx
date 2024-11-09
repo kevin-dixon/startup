@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
+import { Outlet } from "react-router-dom";
 
 export function Player() {
     return (
@@ -61,6 +62,7 @@ export function Player() {
                     </div>
                 </div>
             </div>
+            <Outlet />
         </main>
     );
 }
