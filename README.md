@@ -67,3 +67,4 @@ For this delivarable I implemented React for page rendering and other functional
 - [x] React components - header, footer, usernames, gameID, and other elements in mock by react components.
 - [x] React router - page routing is completed by the application react router.
 - [x] React hooks - authentication state of home page is implemented with react hooks.
+- [ ] Issues - images are currently broken, working on a solution
