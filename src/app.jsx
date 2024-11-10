@@ -51,25 +51,43 @@ function Layout() {
 export default function App() {
     const [authState, setAuthState] = useState(AuthState.Login);
     const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+    const [gameID, setGameID] = useState('');
+    const [displayName, setDisplayName] = useState('');
 
     return (
         <Router>
             <div>
                 <Routes>
                     <Route path="/" element={<Layout />} />
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/login" element={<Login
+                        email={email}
+                        password={password}
+                        setEmail={setEmail}
+                        setPassword={setPassword}
+                        onLogin={(email) => {
+                            setEmail(email);
+                            setName(email); // Update the name when login occurs
+                        }}
+                    />} />
                     <Route path="/createacct" element={<CreateAcct />} />
-                    <Route path="/hostmain" element={<HostMain />} />
+                    <Route path="/hostmain" element={<HostMain
+                        name={name}
+                        gameID={gameID}
+                    />} />
                     <Route path="/hostvote" element={<HostVote />} />
                     <Route path="/player" element={<Player />} />
                     <Route path="/editplayers" element={<EditPlayers />} />
                     <Route path="/events" element={<Events />} />
-                    <Route path="/home" element={<Home 
+                    <Route path="/home" element={<Home
                         email={email}
+                        password={password}
                         authState={authState}
-                        onAuthChange={(newEmail, newAuthState) => {
+                        onAuthChange={(newEmail, newPassword, newAuthState) => {
                             setAuthState(newAuthState);
                             setEmail(newEmail);
+                            setPassword(newPassword);
                         }}
                     />} />
                 </Routes>

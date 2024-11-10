@@ -10,21 +10,31 @@ import Header from "../components/Header";
 export function Login(props) {
 
     const navigate = useNavigate();
-
     const [email, setEmail] = React.useState(props.email);
-    const [password, setPassword] = React.useState('');
+    const [gameID, setGameID] = React.useState(props.gameID);
+    const [password, setPassword] = React.useState(props.password);
+
+
+    function generateGameID() {
+        /*TODO: implement random gameID generator */
+        return 123456;
+    }
 
     async function loginHost(e) {
         e.preventDefault();
         localStorage.setItem('email', email);
+        localStorage.setItem('gameID', generateGameID());
         props.onLogin(email);
+        console.log("login action email: ", email);
         navigate('/hostmain');
     }
 
-    async function createUser(e) {
+    async function loginPlayer(e) {
         e.preventDefault();
-        localStorage.setItem('email', email);
-        props.onLogin(email);
+        localStorage.setItem('displayName', displayName);
+        localStorage.setItem('gameID', gameID);
+        props.onPlayerLogin(displayName);
+        navigate('/player')
     }
 
     return (
@@ -54,11 +64,8 @@ export function Login(props) {
                         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control m-2" id="inputPassword" placeholder="Enter Password"
                             required></input>
                     </div>
-                    <Button type="button" className="btn btn-primary w-100 m-2 text-white" onClick={(e) => loginHost(e)}>
+                    <Button type="button" className="btn btn-primary w-100 m-2 text-white" onClick={loginHost}>
                         Login
-                    </Button>
-                    <Button type="button" className="btn btn-secondary w-100 m-2 text-white" onClick={(e) => createUser(e)}>
-                        Create New
                     </Button>
                 </form>
             </div>

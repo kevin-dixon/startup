@@ -8,21 +8,25 @@ import { AuthState } from './authState';
 import { HostMain } from '../hostmain';
 import { Login } from '../login';
 
-export function Home({ email, authState, onAuthChange }) {
+export function Home({ email, password, authState, onAuthChange }) {
 
-    console.log("Current AuthState:", authState)
+    console.log("Current AuthState:", authState);
 
     return (
         <div>
             {authState.equals(AuthState.Unknown) && <h2>unknown auth state</h2>}
             {authState.equals(AuthState.Host) && (
-                <HostMain email={email} onLogout={() => onAuthChange(email, AuthState.Login)} />
+                <HostMain 
+                    name={email}
+                    gameID={gameID}
+                    onLogout={() => onAuthChange('', '', AuthState.Login)} />
             )}
             {authState.equals(AuthState.Login) && (
                 <Login
                     email={email}
-                    onLogin={(email) => {
-                        onAuthChange(email, AuthState.Host)
+                    password={password}
+                    onLogin={(newEmail, newPassword) => {
+                        onAuthChange(newEmail, newPassword, AuthState.Host)
                     }}
                 />
             )}

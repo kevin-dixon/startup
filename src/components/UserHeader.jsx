@@ -2,6 +2,7 @@ import React from 'react';
 
 const UserHeader = (props) => {
     const name = props.name;
+    const gameID = props.gameID;
 
     return (
         <header class="navbar navbar-expand-lg basic-background">
@@ -15,7 +16,7 @@ const UserHeader = (props) => {
                 </div>
                 <div class="p-2">
                     <label>Game ID</label>
-                    <div class="d-inline p-2 bg-primary text-white rounded">[####]</div>
+                    <div class="d-inline p-2 bg-primary text-white rounded">{gameID}</div>
                 </div>
             </div>
         </header>
