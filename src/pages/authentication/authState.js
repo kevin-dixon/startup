@@ -6,4 +6,12 @@ export class AuthState {
     constructor(name) {
       this.name = name;
     }
+
+    toString() {
+      return this.name;
+    }
+
+    equals(other) {
+      return other instanceof AuthState && this.name === other.name;
+    }
   }

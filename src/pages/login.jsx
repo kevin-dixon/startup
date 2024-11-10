@@ -4,10 +4,12 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import '../../scss/custom.css';
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 export function Login(props) {
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = React.useState(props.email);
     const [password, setPassword] = React.useState('');
@@ -16,6 +18,7 @@ export function Login(props) {
         e.preventDefault();
         localStorage.setItem('email', email);
         props.onLogin(email);
+        navigate('/hostmain');
     }
 
     async function createUser(e) {

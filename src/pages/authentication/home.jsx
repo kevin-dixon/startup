@@ -7,24 +7,20 @@ import '../../../scss/custom.css';
 import { AuthState } from './authState';
 import { HostMain } from '../hostmain';
 import { Login } from '../login';
-import { useLocation } from "react-router-dom";
 
-export function Home({ userName, onAuthChange }) {
-    const location = useLocation();
-    const authState = location.state?.authState;
+export function Home({ email, authState, onAuthChange }) {
 
-    console.log("Current AuthState:")
-    console.log(authState)
+    console.log("Current AuthState:", authState)
 
     return (
         <div>
-            {authState.name === AuthState.Unknown.name && <h2>unknown auth state</h2>}
-            {authState.name === AuthState.Host.name && (
+            {authState.equals(AuthState.Unknown) && <h2>unknown auth state</h2>}
+            {authState.equals(AuthState.Host) && (
                 <HostMain email={email} onLogout={() => onAuthChange(email, AuthState.Login)} />
             )}
-            {authState.name === AuthState.Login.name && (
+            {authState.equals(AuthState.Login) && (
                 <Login
-                    userName={userName}
+                    email={email}
                     onLogin={(email) => {
                         onAuthChange(email, AuthState.Host)
                     }}

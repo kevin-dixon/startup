@@ -31,7 +31,7 @@ function Layout() {
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/hostmain">Host</Link></li>
                         <li><Link to="/player">Player</Link></li>
-                        <li><Link to="/home" state={{ authState: AuthState.Login }}>Home</Link> (redirects based on authentication)</li>
+                        <li><Link to="/home">Home</Link> (redirects based on authentication)</li>
                     </ul>
                 </nav>
                 <h2>Sub Pages</h2>
@@ -49,8 +49,8 @@ function Layout() {
 }
 
 export default function App() {
-    const [authState, setAuthState] = useState(AuthState.Unknown);
-    const [userName, setUserName] = useState('');
+    const [authState, setAuthState] = useState(AuthState.Login);
+    const [email, setEmail] = useState('');
 
     return (
         <Router>
@@ -65,11 +65,11 @@ export default function App() {
                     <Route path="/editplayers" element={<EditPlayers />} />
                     <Route path="/events" element={<Events />} />
                     <Route path="/home" element={<Home 
-                        userName={userName}
+                        email={email}
                         authState={authState}
-                        onAuthChange={(userName, newAuthState) => {
+                        onAuthChange={(newEmail, newAuthState) => {
                             setAuthState(newAuthState);
-                            setUserName(userName);
+                            setEmail(newEmail);
                         }}
                     />} />
                 </Routes>
