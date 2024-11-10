@@ -12,6 +12,7 @@ export function Login(props) {
     const navigate = useNavigate();
     const [email, setEmail] = React.useState(props.email);
     const [gameID, setGameID] = React.useState(props.gameID);
+    const [displayName, setDisplayName] = React.useState(props.displayName);
     const [password, setPassword] = React.useState(props.password);
 
 
@@ -44,14 +45,16 @@ export function Login(props) {
                 <form className="form-signin">
                     <h1 className="display-6 m-3">Join</h1>
                     <div className="form-group">
-                        <input type="text" className="form-control m-2" id="inputGameID" placeholder="Enter Game ID" required
+                        <input type="text" value={gameID} onChange={(e) => setGameID(e.target.value)} className="form-control m-2" id="inputGameID" placeholder="Enter Game ID" required
                             autofocus></input>
                     </div>
                     <div className="form-group">
-                        <input type="text" className="form-control m-2" id="inputDisplayName" placeholder="Enter Display Name"
+                        <input type="text" value={displayName} onChange={(e) => setDisplayName(e.target.value)} className="form-control m-2" id="inputDisplayName" placeholder="Enter Display Name"
                             required></input>
                     </div>
-                    <button type="submit" className="btn btn-primary w-100 m-2 text-white">Submit</button>
+                    <Button type="button" className="btn btn-primary w-100 m-2 text-white" onClick={loginPlayer}>
+                        Submit
+                    </Button>
                 </form>
             </div>
             <div className="container d-flex justify-content-center text-center">

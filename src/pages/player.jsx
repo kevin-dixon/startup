@@ -7,10 +7,10 @@ import { Outlet, Link } from "react-router-dom";
 import UserHeader from '../components/UserHeader';
 
 
-export function Player() {
+export function Player(props) {
     return (
         <div>
-            <UserHeader />
+            <UserHeader name={localStorage.getItem('displayName')} gameID={localStorage.getItem('gameID')}/>
             <div class="card-group row m-2">
                 <div class="col-12 col-md-8">
                     <div class="card">

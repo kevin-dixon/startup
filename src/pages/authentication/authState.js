@@ -2,6 +2,7 @@ export class AuthState {
     static Unknown = new AuthState('unknown');
     static Host = new AuthState('host');
     static Login = new AuthState('login');
+    static Player = new AuthState('player');
   
     constructor(name) {
       this.name = name;

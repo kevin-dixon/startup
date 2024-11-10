@@ -25,13 +25,16 @@ function Layout() {
         <React.Fragment>
             <Header />
             <div className="m-3">
-                <h2>Main Pages</h2>
+                <h2>Main Page</h2>
+                <nav>
+                    <Link to="/home">Home</Link> (redirects based on authentication, demonstrates React functionality)
+                </nav>
+                <h2>Redirect Pages</h2>
                 <nav>
                     <ul>
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/hostmain">Host</Link></li>
                         <li><Link to="/player">Player</Link></li>
-                        <li><Link to="/home">Home</Link> (redirects based on authentication)</li>
                     </ul>
                 </nav>
                 <h2>Sub Pages</h2>
@@ -66,9 +69,17 @@ export default function App() {
                         password={password}
                         setEmail={setEmail}
                         setPassword={setPassword}
+                        displayName={displayName}
+                        gameID={gameID}
+                        setDisplayName={setDisplayName}
+                        setGameID={setGameID}
                         onLogin={(email) => {
                             setEmail(email);
                             setName(email); // Update the name when login occurs
+                        }}
+                        onPlayerLogin={(displayName, gameID) => {
+                            setDisplayName(displayName);
+                            setGameID(gameID); // Update the name when login occurs
                         }}
                     />} />
                     <Route path="/createacct" element={<CreateAcct />} />
@@ -77,7 +88,10 @@ export default function App() {
                         gameID={gameID}
                     />} />
                     <Route path="/hostvote" element={<HostVote />} />
-                    <Route path="/player" element={<Player />} />
+                    <Route path="/player" element={<Player
+                        name={displayName}
+                        gameID={gameID}
+                    />} />
                     <Route path="/editplayers" element={<EditPlayers />} />
                     <Route path="/events" element={<Events />} />
                     <Route path="/home" element={<Home

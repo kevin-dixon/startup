@@ -7,7 +7,7 @@ import UserHeader from '../components/UserHeader';
 export function EditPlayers() {
     return (
         <div>
-            <UserHeader />
+            <UserHeader name={localStorage.getItem('email')} gameID={localStorage.getItem('gameID')}/>
             <div class="card m-2">
                 <div class="card-body">
                     <h1 class="card-title display-6 text-center text-md-start">Edit Players</h1>
