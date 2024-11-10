@@ -60,3 +60,10 @@ For this delivarable I added styling to my application using CSS, Bootstrap, and
 - [x] Application elements - color scheme and spacing creates visually appealing elements
 - [x] Application text content - example content is listed and placeholders marked with brackets, consistent font and heading typography for all pages
 - [x] Application images - custom icons for the header, browser head, and footer are added with proper sizing
+
+## React deliverable
+For this delivarable I implemented React for page rendering and other functionality.
+- [x] Vite - application is bundeled using vite
+- [x] React components - header, footer, usernames, gameID, and other elements in mock by react components.
+- [x] React router - page routing is completed by the application react router.
+- [x] React hooks - authentication state of home page is implemented with react hooks.
