@@ -1,10 +1,13 @@
+//displayed if authenticated as host
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
 import { Outlet, Link } from "react-router-dom";
 import UserHeader from '../components/UserHeader';
 
-export function HostMain() {
+export function HostMain(props) {
+
     return (
         <div>
             <UserHeader />

@@ -1,3 +1,5 @@
+//displayed if authenticated as player
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
