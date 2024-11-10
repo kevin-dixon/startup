@@ -10,7 +10,7 @@ export function HostMain(props) {
 
     return (
         <div>
-            <UserHeader />
+            <UserHeader name={props.email} />
             <div class="card-group row">
                 <div class="col-10 col-sm-7 m-2">
                     <div class="card">

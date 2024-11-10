@@ -29,9 +29,9 @@ function Layout() {
                 <nav>
                     <ul>
                         <li><Link to="/login">Login</Link></li>
-                        {/* <li><Link to="/hostmain">Host</Link></li>
-                        <li><Link to="/player">Player</Link></li> */}
-                        <li><Link to="/home" state={{ authState: AuthState.Login }}>Home</Link></li>
+                        <li><Link to="/hostmain">Host</Link></li>
+                        <li><Link to="/player">Player</Link></li>
+                        <li><Link to="/home" state={{ authState: AuthState.Login }}>Home</Link> (redirects based on authentication)</li>
                     </ul>
                 </nav>
                 <h2>Sub Pages</h2>

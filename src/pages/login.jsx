@@ -2,14 +2,27 @@
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 import '../../scss/custom.css';
 import { Link, Outlet } from "react-router-dom";
 import Header from "../components/Header";
 
 export function Login(props) {
 
-    const [userName, setUserName] = React.useState(props.userName);
+    const [email, setEmail] = React.useState(props.email);
     const [password, setPassword] = React.useState('');
+
+    async function loginHost(e) {
+        e.preventDefault();
+        localStorage.setItem('email', email);
+        props.onLogin(email);
+    }
+
+    async function createUser(e) {
+        e.preventDefault();
+        localStorage.setItem('email', email);
+        props.onLogin(email);
+    }
 
     return (
         <div>
@@ -32,13 +45,18 @@ export function Login(props) {
                 <form className="form-signin">
                     <h1 className="display-6 m-3">Host</h1>
                     <div className="form-group">
-                        <input type="email" className="form-control m-2" id="inputEmail" placeholder="Enter Email" required></input>
+                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}  className="form-control m-2" id="inputEmail" placeholder="Enter Email" required></input>
                     </div>
                     <div className="form-group">
-                        <input type="password" className="form-control m-2" id="inputPassword" placeholder="Enter Password"
+                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control m-2" id="inputPassword" placeholder="Enter Password"
                             required></input>
                     </div>
-                    <button type="submit" className="btn btn-primary w-100 m-2 text-white">Login</button>
+                    <Button type="button" className="btn btn-primary w-100 m-2 text-white" onClick={(e) => loginHost(e)}>
+                        Login
+                    </Button>
+                    <Button type="button" className="btn btn-secondary w-100 m-2 text-white" onClick={(e) => createUser(e)}>
+                        Create New
+                    </Button>
                 </form>
             </div>
             <div className="form-group d-flex justify-content-center">
