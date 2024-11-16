@@ -1,9 +1,10 @@
 const { MongoClient } = require('mongodb');
+const config = require('./dbConfig.json');
+const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}/?retryWrites=true&w=majority&appName=MafiaClusterA`;
 
 async function main(){
 
-    const adminPass = encodeURIComponent("1T5:16rejoicemon")
-    const myUri = "mongodb+srv://writekevind:" + adminPass + "@mafiaclustera.vlpjq.mongodb.net/?retryWrites=true&w=majority&appName=MafiaClusterA"
+    const myUri = url
 
     const client = new MongoClient(myUri);
 
