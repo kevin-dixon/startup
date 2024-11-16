@@ -75,6 +75,23 @@ export function HostMain(props) {
                 </div>
             </div>
 
+            {/* Demonstrating 3rd party api call */}
+            <div class="card-group row">
+            <div class="col-10 col-sm-4 m-2">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h1 class="card-title display-6 text-center text-md-start">Players and Log</h1>
+                            <nav>
+                                <a class="btn btn-primary active text-white m-2" role="button"
+                                    aria-pressed="true"><Link class="text-white" to="/editplayers">Player List</Link></a>
+                                <a class="btn btn-primary active text-white m-2" role="button"
+                                    aria-pressed="true"><Link class="text-white" to="/events">Event Log</Link></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <Outlet />
         </div>
     );
