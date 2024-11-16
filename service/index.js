@@ -36,6 +36,15 @@ apiRouter.get('/testplayers', (_req, res) => {
     res.send(testplayer);
   });
 
+// GetTestEvents
+var testevent = {
+    "title": "event_name",
+    "message": "event message."
+}
+apiRouter.get('/testevents', (_req, res) => {
+    res.send(testevent);
+  });
+
 //GetPlayers
 apiRouter.get('/players', (_req, res) => {
     res.send(players);
