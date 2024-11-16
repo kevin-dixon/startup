@@ -1,10 +1,11 @@
+//___________________GENERAL_______________________//
 const express = require('express');
 const uuid = require('uuid');
 const app = express();
 
 // Saved in memory and disappear whenever the service is restarted.
 let players = {};
-let gameID = {};
+let gameIDs = {};
 let events = {};
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
@@ -20,6 +21,17 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
+// Return the application's default page if the path is unknown
+app.use((_req, res) => {
+    res.sendFile('index.html', { root: 'public' });
+  });
+
+// listen at given port
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+  });
+
+//_____________________DATA_______________________//
 // GetTest
 var testdata = {test: "testdata"}
 apiRouter.get('/test', (_req, res) => {
@@ -50,11 +62,14 @@ apiRouter.get('/players', (_req, res) => {
     res.send(players);
   });
 
-// Return the application's default page if the path is unknown
-app.use((_req, res) => {
-    res.sendFile('index.html', { root: 'public' });
+//GetGameID
+apiRouter.get('/players', (_req, res) => {
+    res.send(gameIDs);
   });
-  
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
+
+//GetEvents
+apiRouter.get('/players', (_req, res) => {
+    res.send(events);
   });
+
+//_____________________AUTH_______________________//
