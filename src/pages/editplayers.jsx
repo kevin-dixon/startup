@@ -7,7 +7,7 @@ import UserHeader from '../components/UserHeader';
 
 export function EditPlayers() {
     const [players, setPlayers] = React.useState([]);
-    const [testState, setTestState] = React.useState()
+    const [testState, setTestState] = React.useState();
 
     // Demonstrates calling a service asynchronously so that
     // React can properly update state objects with the results.
