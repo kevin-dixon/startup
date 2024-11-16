@@ -1,11 +1,9 @@
-async function main(){
-    /**
-     * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
-     * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
-     */
-    const uri = "mongodb+srv://<username>:<password>@/sample_airbnb?retryWrites=true&w=majority";
-    const myUri = "mongodb+srv://writekevind:1T5:16rejoicemon@mafiaclustera.vlpjq.mongodb.net/?retryWrites=true&w=majority&appName=MafiaClusterA";
+const { MongoClient } = require('mongodb');
 
+async function main(){
+
+    const adminPass = encodeURIComponent("1T5:16rejoicemon")
+    const myUri = "mongodb+srv://writekevind:" + adminPass + "@mafiaclustera.vlpjq.mongodb.net/?retryWrites=true&w=majority&appName=MafiaClusterA"
 
     const client = new MongoClient(myUri);
 
