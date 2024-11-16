@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "node": "^18.20.5",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.80.6",
+    "vite": "^5.4.10"
+  },
+  "name": "startup",
+  "version": "1.0.0",
+  "description": "If you have played the game \"Mafia\", you know how troublesome the voting phase of the game can be. Each round, all current players need to vote on someone to remove from the game and it can get messy with just raising hands and tallying it up. In addition, it's useful to know in future rounds of the game which players chose who to remove. In this app, a game leader can host a game that contains all the players, they can initiate voting rounds, and players can select who they want to eliminate. In addition, players can view past votes to see how they played out.",
+  "main": "custom.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
