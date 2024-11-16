@@ -1,9 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/custom.css';
-import {
-    BrowserRouter as Link
-} from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import UserHeader from '../components/UserHeader';
 
 export function Events() {
@@ -57,6 +55,7 @@ export function Events() {
                 </a>
             </nav>
 
+            <Outlet />
         </div>
     );
 }
