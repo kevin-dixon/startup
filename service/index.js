@@ -2,9 +2,10 @@ const express = require('express');
 const uuid = require('uuid');
 const app = express();
 
-// The players and gameID are saved in memory and disappear whenever the service is restarted.
+// Saved in memory and disappear whenever the service is restarted.
 let players = {};
-let gameID = [];
+let gameID = {};
+let events = {};
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
@@ -25,6 +26,20 @@ apiRouter.get('/test', (_req, res) => {
   console.log("In Test")
   res.send(testdata);
 });
+
+// GetTestPlayers
+var testplayer = {
+    "displayName": "example_name",
+    "gameID": "12345"
+}
+apiRouter.get('/testplayers', (_req, res) => {
+    res.send(testplayer);
+  });
+
+//GetPlayers
+apiRouter.get('/players', (_req, res) => {
+    res.send(players);
+  });
 
 // Return the application's default page if the path is unknown
 app.use((_req, res) => {
