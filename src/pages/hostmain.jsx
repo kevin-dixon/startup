@@ -8,6 +8,21 @@ import UserHeader from '../components/UserHeader';
 
 export function HostMain(props) {
 
+    // Demonstrating 3rd party API call
+    const [data, setData] = React.useState(null);
+    React.useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random?language=eng');
+                const jsonData = await response.json();
+                setData(jsonData);
+            } catch (editplayers) {
+                console.error('no data fetched: ', e)
+            }
+        };
+        fetchData();
+    }, []);
+
     return (
         <div>
             <UserHeader name={localStorage.getItem('email')} gameID={localStorage.getItem('gameID')} />
@@ -77,16 +92,14 @@ export function HostMain(props) {
 
             {/* Demonstrating 3rd party api call */}
             <div class="card-group row">
-            <div class="col-10 col-sm-4 m-2">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h1 class="card-title display-6 text-center text-md-start">Players and Log</h1>
-                            <nav>
-                                <a class="btn btn-primary active text-white m-2" role="button"
-                                    aria-pressed="true"><Link class="text-white" to="/editplayers">Player List</Link></a>
-                                <a class="btn btn-primary active text-white m-2" role="button"
-                                    aria-pressed="true"><Link class="text-white" to="/events">Event Log</Link></a>
-                            </nav>
+                            <h1 class="card-title display-6 text-center text-md-start">Example API</h1>
+                            <label class="h6">Pulling data from random facts api:</label>
+                            <p>
+                                {data ? data.text : "Loading..."}
+                            </p>
                         </div>
                     </div>
                 </div>

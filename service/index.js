@@ -121,6 +121,3 @@ apiRouter.delete('/auth/logout', (req, res) => {
     }
     res.status(204).end();
 });
-
-//_____________________OTHER_______________________//
-// Demonstrating 3rd party API call
