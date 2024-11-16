@@ -68,3 +68,12 @@ For this delivarable I implemented React for page rendering and other functional
 - [x] React router - page routing is completed by the application react router.
 - [x] React hooks - authentication state of home page is implemented with react hooks.
 - [ ] Issues - images are currently broken, working on a solution
+
+## Service deliverable
+For this delivarable I implemented service calls for data fetching and other purposes.
+- [x] HTTP service using Node.js and express is created
+- [x] Frontend is served using Express static middleware
+- [x] Frontend calls third party service (see "Host" main page)
+- [x] Backend provides service endpoints (see service/index.js)
+- [x] Frontend calls service endpoints (see "Edit Players" or "Event Viewer" for examples)
+- [ ] Issues - images are currently broken, working on a solution
