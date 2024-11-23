@@ -1,9 +1,11 @@
 const { MongoClient } = require('mongodb');
-const config = require('./dbConfig.json');
+const config = require('../dbConfig.json');
+
+const pass = encodeURIComponent(config.password)
 
 async function main() {
   // Connect to the database cluster
-  const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
+  const url = `mongodb+srv://${config.userName}:${pass}@${config.hostname}/?retryWrites=true&w=majority&appName=MafiaClusterA`;
   const client = new MongoClient(url);
   const db = client.db('rental');
   const collection = db.collection('house');
