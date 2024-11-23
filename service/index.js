@@ -1,7 +1,20 @@
 //___________________GENERAL_______________________//
 const express = require('express');
 const uuid = require('uuid');
+const { MongoClient } = require('mongodb');
+const bcrypt = require('bcrypt');
+const cookieParser = require('cookie-parser');
 const app = express();
+
+
+// database connection
+const config = require('../dbConfig.json');
+const pass = encodeURIComponent(config.password)
+const url = `mongodb+srv://${config.userName}:${pass}@${config.hostname}/?retryWrites=true&w=majority&appName=MafiaClusterA`;
+const client = new MongoClient(url);
+const collection = client.db('authTest').collection('user');
+
+app.use(cookieParser());
 
 // Saved in memory and disappear whenever the service is restarted.
 let players = {};
